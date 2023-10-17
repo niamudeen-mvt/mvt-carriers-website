@@ -27,8 +27,6 @@ p,
 
 /* ============ setting fonts ends ================= */
 
-/* ============= custom css ===================== */
-
 * {
   margin: 0;
   padding: 0;
@@ -48,12 +46,10 @@ p,
   --purple-color: #eaebff;
   --light-black: #363636;
   --dark-purple-color: #231f40;
-  --full-width: 100vw;
+  --full-width: 100%;
   --default-container-width: 85%;
   --inner-container-width: 72%;
 }
-
-/* ============= custom end ===================== */
 
 /* ========== default settings ============ */
 
@@ -320,7 +316,11 @@ header {
 }
 
 .hero_section .hero_content .main_heading span {
-  background: -webkit-linear-gradient(var(--yellow-color), var(--orange-color));
+  background-image: linear-gradient(
+    to right,
+    var(--yellow-color),
+    var(--orange-color)
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -455,10 +455,17 @@ header {
   color: var(--grey-color);
   position: relative;
 }
+.feautured_section .left_section {
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+}
 
 /* ============== media query starts ============ */
 
-@media (max-width: 1200px) {
+@media (max-width: 1440px) {
   .feautured_section .left_section {
     display: flex;
     justify-content: center;
@@ -1500,7 +1507,6 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: -1;
 }
 .theme_icon_2 img {
   width: 80px;
