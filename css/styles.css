@@ -32,6 +32,7 @@ p,
   padding: 0;
   box-sizing: border-box;
   user-select: none;
+  /* background-color: rgba(0, 0, 0, 0.1); */
 }
 
 :root {
@@ -49,6 +50,10 @@ p,
   --full-width: 100%;
   --default-container-width: 85%;
   --inner-container-width: 72%;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /* ========== default settings ============ */
@@ -169,6 +174,15 @@ header {
   font-weight: 500;
   line-height: 16px;
   text-decoration: none;
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+}
+
+.navbar_section ul li a:hover {
+  color: var(--yellow-color);
 }
 
 .navbar_section .collpased_btn {
@@ -190,6 +204,7 @@ header {
   width: 16px;
   height: 16px;
   padding: 1.33px, 5.33px, 0.67px, 0px;
+  margin-right: 10px;
 }
 .nav_btn .nav_btn_text,
 .navbar_section .collpased_btn .nav_btn_text {
@@ -240,11 +255,11 @@ header {
     justify-content: center;
     align-items: center;
     z-index: 999;
-    transition: 0.5s ease;
-    -webkit-transition: 0.5s ease;
-    -moz-transition: 0.5s ease;
-    -ms-transition: 0.5s ease;
-    -o-transition: 0.5s ease;
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
   }
 
   .navbar_section .collpase_navbar_menu ul {
@@ -709,6 +724,7 @@ header {
 }
 /* =========== media query ends ================ */
 /* =========== about us section ends here ================ */
+
 /* =========== service section starts here ================ */
 
 .service_section_container {
@@ -928,6 +944,13 @@ header {
     width: 100%;
   }
 }
+
+@media (max-width: 768px) {
+  .testimonial_section .icon3 {
+    display: none;
+  }
+}
+
 @media (max-width: 576px) {
   .testimonial_section .feedback {
     font-size: 16px;
@@ -1273,7 +1296,7 @@ header {
   background-color: var(--soft-blue-theme);
 }
 .faq_section .bottom_section .accordion .accordion-button::after {
-  background-image: url("./images/acordion-arrow-icon.png");
+  background-image: url("../icons/accordion-icon.svg");
   background-position: center;
   background-size: cover;
   width: 9.27px;
@@ -1562,6 +1585,11 @@ header {
 @media (max-width: 576px) {
   .theme_icon_5 {
     left: 0;
+  }
+
+  .theme_icon_1,
+  .theme_icon_2 {
+    display: none;
   }
 }
 
