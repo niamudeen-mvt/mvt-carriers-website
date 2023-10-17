@@ -1,0 +1,606 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MVT CARRIERS</title>
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+  <!-- Header section starts here -->
+  <header class="sticky-top">
+    <div class="navbar_section">
+      <a href="#" class="brand_logo">
+        <img src="./images/logo.png" alt="brand-logo" class="img-fluid">
+      </a>
+      <nav class="nav_menu" id="responsiveMenu">
+        <ul>
+          <li id="portfolio"><a href="#" class="nav-link nav-link-ltr">Portfolio</a></li>
+          <li id="courses"><a href="#" class="nav-link nav-link-ltr">Courses</a></li>
+          <li id="about"><a href="#" class="nav-link nav-link-ltr">About</a></li>
+          <li id="application_process"><a href="#" class="nav-link nav-link-ltr">Application Process</a></li>
+          <li id="contact_us"><a href="#" class="nav-link nav-link-ltr">Contact Us</a></li>
+
+          <button class="collpased_btn">
+            <span>
+              <img src="./images/nav-icon.png" alt="user-icon">
+            </span>
+            <span class="nav_btn_text">Login / Register Now</span>
+          </button>
+        </ul>
+      </nav>
+      <button class="nav_btn">
+        <span>
+          <img src="./images/nav-icon.png" alt="user-icon">
+        </span>
+        <span class="nav_btn_text">Login / Register Now</span>
+      </button>
+
+      <div class="toggle_section" onclick="makeNavMenuResponsive()">
+        <i class="fa-solid fa-bars" id="toggleBtn"></i>
+      </div>
+    </div>
+  </header>
+  <!-- Header section ends here -->
+
+  <!-- hero section starts -->
+  <div class="hero_section_container">
+    <div class="hero_section_wrapper " data-aos="fade-up" data-aos-delay="50" data-aos-duration="2000">
+      <section class="hero_section ">
+        <div class="row ">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12
+          col-xl-6 flexCenter  ">
+            <div class="hero_content" data-aos="fade-up" data-aos mb-5-delay="50" data-aos-duration="2000">
+              <h1 class="main_heading" data-aos="fade-up" data-aos-delay="50" data-aos-duration="2000">
+                Real Projects, Real Skills, Real <span>Impact</span>
+              </h1>
+              <p class="sub_heading px-2" data-aos="fade-up" data-aos-delay="50" data-aos-duration="2000">
+                Attain Empowerment through Online Education: Acquire <br /> Knowledge and Skills from Top Instructors
+              </p>
+              <button class="enroll_btn flexCenter" data-aos="fade-up" data-aos-delay="50" data-aos-duration="2000">
+                <span class="content">Enroll Now</span>
+                <span class="icon  flexCenter ">
+                  <img src="./images/arrow-icon.png" alt="arrow-icon">
+                </span>
+              </button>
+            </div>
+          </div>
+          <div class="col-12 col-lg-12  col-sm-12  col-md-12 col-xl-6 right_section  defaultBottomMargin">
+            <div class="img_container" data-aos="fade-up" data-aos-delay="50" data-aos-duration="2000">
+              <img src="./images/hero-section-img.png" alt="Banner-Img" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- hero section ends -->
+
+    <div class="theme_icon_1" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="50">
+      <img src="./images/hero-section-bg-icon1.png" alt="theme_icon_1" class="img-fluid">
+    </div>
+    <div class="theme_icon_2 " data-aos="fade-up" data-aos-duration="1500" data-aos-delay="50">
+      <img src="./images/hero-section-bg-icon2.png" alt="theme_icon_2" class="img-fluid">
+    </div>
+
+
+    <!-- theme gradient image -->
+    <div class="theme_gradient_image_overlay1 ">
+      <img src="./images/theme-gradient-img2.png" alt="theme-background-imgae" class="img-fluid">
+    </div>
+
+
+  </div>
+  <!-- hero section ends -->
+
+  <!-- Main section starts here -->
+  <main>
+
+    <!-- featured technology section starts -->
+    <section class="feautured_section " data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500">
+      <div class="row flexCenter ">
+        <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12 left_section p-0 ">
+          <div class="heading flexCenter">
+            Featured Technologies
+          </div>
+        </div>
+        <div class="col-xl-8 col-lg-12 col-md-12  col-sm-12 col-12 right_section p-0 ">
+          <div class="technologies flexCenter ">
+            <div id="html" data-aos="zoom-in" data-aos-delay="150" data-aos-duration="1500">
+              <img src="./images/html-icon.png" class="icon" alt="html-icon">
+              <span class="text">HTML</span>
+            </div>
+            <div id="css" data-aos="zoom-in" data-aos-delay="150" data-aos-duration="1500">
+              <img src="./images/css-icon.png" class="icon" alt="css-icon">
+              <span class="text">CSS</span>
+            </div>
+            <div id="javascript" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1500">
+              <img src="./images/javascript-icon.png" class="icon" alt="javascript-icon">
+              <span class="text">JAVASCRIPT</span>
+            </div>
+            <div id="react" data-aos="zoom-in" data-aos-delay="250" data-aos-duration="1500">
+              <img src="./images/react-icon.png" class="icon" alt="react-icon">
+              <span class="text">REACT</span>
+            </div>
+            <div id="angular" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="1500">
+              <img src="./images/angular-icon.png" alt="angular-icon" height="30px">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- featured technology section starts -->
+
+
+    <div class="theme_icon_3 hide" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="50">
+      <img src="./images/theme-icon3.png" alt="theme-icon3" class="img-fluid">
+    </div>
+
+    <!------about-us-section starts------ -->
+
+    <div class="about_us_container">
+      <section class="about_us_section ">
+        <div class="row">
+          <div class="col-12  col-lg-3 col-sm-12  p-0  flexCenter">
+            <div class="left_image flexCenter" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1500"
+              data-aos-offset="300">
+              <img src="./images/about-us-left-img.png" alt="about-us-img">
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-12 col-md-12  col-sm-12 flexCenter ">
+            <div class="content_section pt-2 ">
+              <div class="row">
+                <div class="col-lg-12 col-12 ">
+                  <div class="top_content " data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500"
+                    data-aos-offset="300">
+                    <h2 class="" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500">Who are we</h2>
+                    <p class="" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500">At My Virtual
+                      Teams , we're more
+                      than just a web development agency – we're your gateway to
+                      unparalleled learning,
+                      growth, and real-world experience. Our internship program is designed with your future success
+                      in
+                      mind.
+                      Here's why you
+                      should choose us for your journey into the world of web development:</p>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 col-xl-6  left_col  ">
+                  <div class="left_content flexCenter" data-aos="fade-up">
+                    <ul class="p-0">
+                      <li data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1500">
+                        <img src="./images/check-icon.png" alt="check-icon">
+                        The Future Starts Here
+                      </li>
+                      <li data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1500">
+                        <img src="./images/check-icon.png" alt="check-icon">
+                        Hand-On Learning
+                      </li>
+                      <li data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1500">
+                        <img src="./images/check-icon.png" alt="check-icon">
+                        Skill Development
+                      </li>
+                      <li data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1500">
+                        <img src="./images/check-icon.png" alt="check-icon">
+                        Path to Professionalism
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 col-xl-6   right_col ">
+                  <div class="right_content" data-aos="fade-up">
+                    <h2 class="" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500">We offer
+                      the best career</h2>
+                    <button class="" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500">
+                      <p>Enroll Now</p>
+                      <img src="./images/arrow-icon-white.png" alt="arrow-icon">
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class=" col-lg-3 col-sm-12 flexCenter  p-0">
+            <div class="right_image flexCenter" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1500"
+              data-aos-offset="300">
+              <img src="./images/about-us-right-img.png" alt="about-us-img">
+            </div>
+          </div>
+      </section>
+      <div class="theme_icon_4 hide" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="50">
+        <img src="./images/theme-icon4.png" alt="theme-icon4">
+      </div>
+    </div>
+
+    <div class="theme_icon_5" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="50">
+      <img class="img-fluid" src="./images/theme-icon5.png" alt="theme-icon5">
+    </div>
+
+    <!------about-us-section ends------ -->
+
+
+
+    <!------------ services section starts here---------- -->
+    <section class="service_section_container " data-aos="fade-up" data-aos-delay="50" data-aos-offset="300"
+      data-aos-duration="1500">
+      <div class="theme_icon_6" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="50">
+        <img src="./images/theme-icon6.png" alt="theme-icon">
+      </div>
+
+      <div class="service_section_wrapper">
+        <div class="service_section text-center">
+          <div>
+            <p>WHY CHOOSE US </p>
+            <h2>Factors to opt us</h2>
+          </div>
+        </div>
+        <div class="service_card_section ">
+          <div class="row">
+            <div class="col-xxl-4 col-xl-6  col-md-6  col-sm-12 col-lg-6 col-12 flexCenter card_col">
+              <div class="card shadow-sm" data-aos="zoom-in-up">
+                <img src="./images/service-1-img.png" alt="card-icon">
+                <p class="card_heading">Experiential Learning</p>
+                <p class="card_description">We understand that knowledge truly comes alive when applied. That's why we
+                  offer a unique blend of
+                  online education and
+                  real-world proj ects, ensuring you're not just learning, but actively doing.</p>
+              </div>
+            </div>
+            <div class="col-xxl-4 col-xl-6  col-lg-6 col-md-6  col-sm-12 col-12 flexCenter card_col ">
+              <div class="card shadow-sm" data-aos="zoom-in-up">
+                <img src="./images/service-2-img.png" alt="card-icon">
+                <p class="card_heading">Expert Instructors</p>
+                <p class="card_description">Our instructors are industry professionals with a wealth of experience and
+                  a
+                  passion for teaching. Learn from the best
+                  and gain insights that go beyond textbooks.</p>
+              </div>
+            </div>
+            <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6  col-sm-12 col-12 flexCenter card_col ">
+              <div class="card shadow-sm" data-aos="zoom-in-up">
+                <img src="./images/service-3-img.png" alt="card-icon">
+                <p class="card_heading">Hands-On Projects </p>
+                <p class="card_description">Get your hands dirty with projects that mirror real industry challenges.
+                  This
+                  is your chance to build a portfolio that
+                  showcases your skills and creativity </p>
+              </div>
+            </div>
+            <div class="offset-xxl-2 col-xxl-4 col-xl-6  col-lg-6 col-md-6  col-sm-12 col-12  flexCenter card_col">
+              <div class="card shadow-sm" data-aos="zoom-in-up">
+                <img src="./images/service-4-img.png" alt="card-icon">
+                <p class="card_heading">Flexible Learning</p>
+                <p class="card_description">Our instructors are industry professionals with a wealth of experience and
+                  a
+                  passion for teaching. Learn from the best
+                  and gain insights that go beyond textbooks.</p>
+              </div>
+            </div>
+            <div class="col-12 col-xl-6 col-xxl-4 col-lg-6 col-md-6  col-sm-12 flexCenter card_col mx-auto">
+              <div class="card shadow-sm" data-aos="zoom-in-up">
+                <img src="./images/service-5-img.png" alt="card-icon">
+                <p class="card_heading">Thriving Community</p>
+                <p class="card_description">Join a vibrant community of like-minded individuals who share your passion
+                  for
+                  growth and learning.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="theme_gradient_img_overlay2 hide">
+        <img src="./images/theme-gradient-img2.png" alt="theme-gradient-img" class="img-fluid">
+      </div>
+    </section>
+    <!-------------services section ends here -->
+
+
+    <!-- -----------testimonial section starts here ------------>
+    <section class="testimonial_section flexCenter ">
+      <div class="text-center content_section ">
+        <p class="section_heading" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500">TESTIMONIAL</p>
+        <h2 data-aos="fade-up" data-aos-duration="1500" data-aos-delay="50">Our Students Feedback</h2>
+        <p class="feedback" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="50">“ I had an amazing
+          experience at EduVibe. The
+          instructors were
+          knowledgeable and passionate, and the coursework was
+          challenging and relevant to my future career. I feel confident that
+          the education I received will prepare me for success."</p>
+        <p class="student_name" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="50">Samyant Verma</p>
+        <p class="student_role" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="50">Full stack developer</p>
+        <div class="image_section text-center w-100">
+          <img src="./images/testimonail-user1-img.png" alt="user-img" data-aos="zoom-in-up" data-aos-duration="1500"
+            data-aos-delay="50">
+          <img src="./images/testimonial-user2.png" alt="user-img" data-aos="zoom-in-up" data-aos-duration="1500"
+            data-aos-delay="50">
+          <img src="./images/testimonial-user3.png" alt="user-img" data-aos="zoom-in-up" data-aos-duration="1500"
+            data-aos-delay="50">
+        </div>
+      </div>
+      <div class="icon1">
+        <img class=" img-fluid" src="./images/testimonial-bg-icon1.png" alt="icon" data-aos="fade-up"
+          data-aos-duration="1500" data-aos-delay="50">
+      </div>
+
+      <div class="icon2 ">
+        <img class="img-fluid" src="./images/testimonial-bg-icon2.png" alt="icon2" data-aos="fade-up"
+          data-aos-duration="1500" data-aos-delay="50">
+      </div>
+
+      <div class="icon3" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="50">
+        <img src="./images/testimonial-bg-icon3.png" alt="icon" class="img-fluid">
+      </div>
+    </section>
+
+    <!-- -----------testimonial section ends here ------------>
+
+
+    <!---------------contact-section starts here------------------  -->
+
+    <div class="contact_wrapper">
+      <div class="contact_container flexCenter hide" data-aos="fade-up" data-aos-delay="50" data-aos-offset="300"
+        data-aos-duration="2000">
+        <section class="contact_section ">
+          <div class="image_overlay">
+            <img src="./images/contact-section-bg.png" alt="default-img" class="img-fluid">
+          </div>
+          <div class="row">
+            <div class="col-12  col-sm-12 col-md-12  col-lg-6 left_section ">
+              <div class="">
+                <p class="text-left">LET US HELP</p>
+                <h2>Let us guide you through your career</h2>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 input_section ">
+              <div class="input_box flexCenter ">
+                <input type=" text" placeholder="Enter your email address">
+                <button>Contact Now</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="theme_icon_7 " data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500">
+        <img src="./images/theme-icon-7.png" alt="theme-icon" class="img-fluid">
+      </div>
+    </div>
+    <!---------------contact-section ends here------------------  -->
+
+
+    <!-- ----------------faq section starts------------------- -->
+    <section class="faq_section flexCol" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500">
+      <div class="faq_container">
+        <div class="top_section  text-center ">
+          <p>FAQ</p>
+          <h2>Frequently asked questions</h2>
+        </div>
+        <div class="bottom_section">
+          <div class="image_overlay">
+            <img src="./images/faq-bg-icon-1.png" alt="icon" class="img-fluid">
+          </div>
+          <div class="accordion " id="accordionExample">
+            <div class="accordion-item" data-aos="zoom-in" data-aos-delay="50" data-aos-offset="300"
+              data-aos-duration="1500">
+              <h2 class="accordion-header">
+                <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  What is the Admission procedure?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show " data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, dolor omnis ex accusantium facere
+                  quia
+                  voluptate cumque nobis? Quaerat magnam sint, asperiores obcaecati recusandae incidunt sapiente quod
+                  libero impedit ex.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item" data-aos="zoom-in" data-aos-delay="150" data-aos-duration="1500">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  How much does it cost?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, dolor omnis ex accusantium facere
+                  quia
+                  voluptate cumque nobis? Quaerat magnam sint, asperiores obcaecati recusandae incidunt sapiente quod
+                  libero impedit ex.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item" data-aos="zoom-in" data-aos-delay="250" data-aos-duration="1500">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  What kind of customer support do you offer?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, dolor omnis ex accusantium facere
+                  quia
+                  voluptate cumque nobis? Quaerat magnam sint, asperiores obcaecati recusandae incidunt sapiente quod
+                  libero impedit ex.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item" data-aos="zoom-in" data-aos-delay="350" data-aos-duration="1500">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Do you provide career guidance?
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, dolor omnis ex accusantium facere
+                  quia
+                  voluptate cumque nobis? Quaerat magnam sint, asperiores obcaecati recusandae incidunt sapiente quod
+                  libero impedit ex.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ----------------faq sectio end here------------ -->
+  </main>
+
+  <!-- Main section end here -->
+
+
+  <div class="faq-icon-div " data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500">
+    <img src="./images/faq-bg-icon2.png" alt="icon">
+  </div>
+
+
+  <!-----------------footer section starts here------------------ -->
+  <footer class="footer_section">
+    <div class="row ">
+      <div class="col-12 col-lg-4 col-sm-12 customBorder col-md-12 defaultBottomMargin ">
+        <div class="left_section " data-aos="fade-up">
+          <a href="#" class="logo" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500">
+            <img src="./images/footer-logo.png" alt="company-logo" class="img-fluid">
+          </a>
+          <div class="info customBorder">
+            <p data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500">At My Virtual Teams , we're more than
+              just a web development agency – we're your gateway to
+              unparalleled
+              learning,
+              growth, and real-world experience. Our internship program is designed with your future success in
+              mind.
+              Here's
+              why you
+              should choose us for your journey into the world of web development:</p>
+          </div>
+          <div class="logo_section flexSB customBorder" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500">
+            <img id="logo1" src="./images/facebook-logo.png" alt="facebook-logo">
+            <img id="logo2" src="./images/footer-logo2.png" alt="facebook-logo">
+            <img id="logo3" src="./images/footer-logo-3.png" alt="facebook-logo">
+            <img id="logo4" src="./images/footer-logo-4.png" alt="facebook-logo">
+          </div>
+        </div>
+      </div>
+      <div class="col-12 offset-lg-2 col-lg-3 customBorder col-md-12 defaultBottomMargin">
+        <div class="quick_links_section">
+          <h4 class='w-100' data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500">Quick Links</h4>
+          <ul data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500">
+            <li id="about-us" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500"><a href="#"><span
+                  class="icon">
+                  <img src="./images/footer-quick-link.png" alt="arrow-icon">
+                </span>About Us</a></li>
+            <li id="live-project-and-portflio" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500">
+              <a href="#"><span class="icon">
+                  <img src="./images/footer-quick-link.png" alt="arrow-icon">
+                </span>Live Projects Portfolio</a>
+            </li>
+            <li id="blogs-and-news" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500"><a href="#"><span
+                  class="icon">
+                  <img src="./images/footer-quick-link.png" alt="arrow-icon">
+                </span>Blogs & News</a></li>
+            <li id="contacts" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500"><a href="#"><span
+                  class="icon">
+                  <img src="./images/footer-quick-link.png" alt="arrow-icon">
+                </span>Contacts</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3 customBorder  defaultBottomMargin">
+        <div class="contact_info_section" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1500">
+          <h4 data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1500">Contact Info</h4>
+          <ul class="p-0" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1500">
+            <li id="adressline1" class="d-flex" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500">
+              <div class="icon">
+                <img src="./images/location-icon.png" alt="location-icon">
+              </div>
+              <a href="#">INDIA <br />
+                STEP-GNDEC, Gill Park, Ludhiana, Punjab 141006
+              </a>
+            </li>
+            <li id="adressline2" class="d-flex" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500">
+              <div class="icon ">
+                <img src="./images/location-icon.png" alt="location-icon">
+              </div><a href="#">USA <br />
+                Austin, Texas, USA
+              </a>
+            </li>
+            <li id="phoneNumber" class="d-flex" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500">
+              <div class="icon">
+                <img src="./images/phone-icon.png" alt="phone-icon">
+              </div><a href="#">+1 (347) 990-01432
+              </a>
+            </li>
+            <li id="email" class="d-flex" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500">
+              <div class="icon">
+                <img src="./images/email-icon.png " alt="email-icon">
+              </div><a href="#">contactus@myvirtualteams.com
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-----------------footer section ends here------------------ -->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+  <script>
+    function makeNavMenuResponsive() {
+      let x = document.getElementById("responsiveMenu")
+      let toggleBtn = document.getElementById('toggleBtn')
+
+      let navbar = document.querySelector('.navbar_section')
+      navbar.classList.toggle('open')
+
+      if (toggleBtn.className === 'fa-solid fa-bars') {
+        toggleBtn.className = "fa-solid fa-xmark"
+      } else {
+        toggleBtn.className = 'fa-solid fa-bars'
+      }
+      if (x.className === "nav_menu") {
+        x.className += ' ' + 'collpase_navbar_menu'
+      } else {
+        x.className = 'nav_menu'
+      }
+    }
+  </script>
+
+
+  <!-- -----------Responsible for animation -->
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+    })
+  </script>
+
+
+</body>
+
+</html>
