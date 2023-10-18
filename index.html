@@ -49,8 +49,8 @@
         <span class=" nav_btn_text">Login / Register Now</span>
       </button>
 
-      <div class=" toggle_section flex_end" onclick="makeNavMenuResponsive()">
-        <i class=" fa-solid fa-bars" id="toggle-icon"></i>
+      <div class="toggle_section flex_end" onclick="makeNavMenuResponsive()">
+        <i class="fa-solid fa-bars" id="toggle-icon"></i>
       </div>
     </div>
   </header>
@@ -554,7 +554,7 @@
       navbar.classList.toggle('open')
       navMenu.classList.toggle('collpase_navbar_menu')
 
-      if (toggleBtn.className === 'fa-solid fa-bars') {
+      if (toggleBtn.className === ('fa-solid fa-bars').trim()) {
         toggleBtn.className = "fa-solid fa-xmark"
       } else {
         toggleBtn.className = 'fa-solid fa-bars'
