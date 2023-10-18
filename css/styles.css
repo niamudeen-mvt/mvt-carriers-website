@@ -12,15 +12,12 @@ h4,
 h3,
 p,
 ul li a,
+.courses,
 .urban_font_500,
 .common_description,
 .urban_font_500w_20f,
-.courses,
-.section_main_heading .section_sub_heading,
-.nav_btn .nav_btn_text,
-.navbar_section .collpased_btn .nav_btn_text,
-.contact_content_section .input_section .input_box button,
-.faq_section .bottom_section .accordion .accordion-button {
+.section_main_heading,
+.section_sub_heading {
   font-family: "Urbanist", sans-serif;
 }
 
@@ -151,6 +148,7 @@ header {
   width: var(--full-width);
   background-color: var(--white-color);
   z-index: 999;
+  box-shadow: 5px 0 50px rgba(0, 0, 0, 0.1);
 }
 
 .navbar_section {
@@ -204,9 +202,6 @@ header {
 
 .nav_btn .nav_btn_icon,
 .navbar_section .collpased_btn .nav_btn_icon {
-  width: 16px;
-  height: 16px;
-  padding: 1.33px, 5.33px, 0.67px, 0px;
   margin-right: 10px;
 }
 .nav_btn .nav_btn_text,
@@ -214,6 +209,7 @@ header {
   font-weight: 600;
   line-height: 16px;
   color: var(--white-color);
+  font-family: "Urbanist", sans-serif;
 }
 
 .navbar_section .toggle_section .fa-xmark {
@@ -234,7 +230,6 @@ header {
   .navbar_section .toggle_section {
     display: block;
   }
-
   .navbar_section .collpase_navbar_menu {
     position: absolute;
     height: 100vh;
@@ -356,7 +351,7 @@ header {
   background-color: transparent;
 }
 .hero_section_content .hero_content .enroll_btn p {
-  color: #231f40;
+  color: var(--dark-purple-color);
 }
 
 .hero_section_content .hero_content .enroll_btn .icon {
@@ -393,6 +388,9 @@ header {
   }
   .hero_section_content .hero_content {
     padding-top: 0px;
+  }
+  .hero_section_wrapper {
+    background-image: url("../images/service-bg-theme.png");
   }
 }
 
@@ -456,8 +454,7 @@ header {
   }
   .feautured_section .row .heading {
     font-size: 25px;
-    width: 100%;
-    height: 100%;
+    text-align: center;
   }
   .feautured_section .row .technologies {
     display: flex;
@@ -870,12 +867,13 @@ header {
   color: var(--white-color);
   background-color: var(--yellow-color);
   padding: 20px, 40px, 20px, 40px;
+  margin-right: 15px;
+  font-family: "Urbanist", sans-serif;
   border-radius: 12px;
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
   -ms-border-radius: 12px;
   -o-border-radius: 12px;
-  margin-right: 15px;
 }
 .contact_content_section .input_section .hidden_btn {
   display: none;
@@ -1029,6 +1027,7 @@ header {
 }
 .faq_section .bottom_section .accordion .accordion-button {
   background-color: var(--soft-blue-theme);
+  font-family: "Urbanist", sans-serif;
 }
 .faq_section .bottom_section .accordion .accordion-button::after {
   background-image: url("../icons/accordion-icon.svg");
@@ -1185,8 +1184,15 @@ header {
 
 /* =========== theme icons ends */
 @media (max-width: 576px) {
+  .footer_section {
+    margin-top: 300px;
+  }
   .theme_icon_5 {
     left: 0;
+  }
+  .theme_icon_4,
+  .faq-icon-div {
+    display: none;
   }
   .section_main_heading,
   .about_us_wrapper .content_section .top_content h2 {
