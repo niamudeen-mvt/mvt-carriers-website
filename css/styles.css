@@ -1,28 +1,9 @@
-/* =========== setting fonts ================= */
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@500;600;700;800&display=swap");
 
 @font-face {
   font-family: VelaSans;
   src: url("../fonts/VelaSans/Static/OTF/VelaSans-Regular.otf");
 }
-
-h1,
-h2,
-h4,
-h3,
-p,
-ul li a,
-.courses,
-.urban_font_500,
-.common_description,
-.urban_font_500w_20f,
-.section_main_heading,
-.section_sub_heading {
-  font-family: "Urbanist", sans-serif;
-}
-
-/* ============ setting fonts ends ================= */
-
 /* ========== default settings ============ */
 
 * {
@@ -141,6 +122,25 @@ button {
 }
 
 /* ============ default settings ends */
+/* =========== setting fonts ================= */
+
+h1,
+h2,
+h4,
+h3,
+p,
+ul li a,
+.courses,
+.urban_font_500,
+.common_description,
+.urban_font_500w_20f,
+.section_main_heading,
+.section_sub_heading {
+  font-family: "Urbanist", sans-serif;
+}
+
+/* ============ setting fonts ends ================= */
+
 /* ============== navbar section starts ============ */
 
 header {
@@ -148,7 +148,7 @@ header {
   width: var(--full-width);
   background-color: var(--white-color);
   z-index: 999;
-  box-shadow: 5px 0 50px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 5px 0 50px rgba(0, 0, 0, 0.1); */
 }
 
 .navbar_section {
@@ -303,7 +303,6 @@ header {
 }
 
 .hero_section_content .hero_content .main_heading {
-  position: relative;
   font-weight: 700;
   font-size: 50px;
   font-size: 70px;
@@ -316,7 +315,14 @@ header {
   left: -26.5px;
 }
 
-.hero_section_content .hero_content .main_heading span {
+.hero_section_content .hero_content .main_heading .real::before {
+  content: url("../icons/ring-icon1.svg");
+  position: absolute;
+  top: -100%;
+  left: -15%;
+}
+
+.hero_section_content .hero_content .main_heading .impact {
   position: relative;
   background-image: linear-gradient(
     to right,
@@ -326,13 +332,13 @@ header {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-/* 
-.hero_section_content .hero_content .main_heading span::after {
+
+.hero_section_content .hero_content .main_heading .impact::after {
   content: url("../icons/impact-ring.svg");
   position: absolute;
   top: 30%;
   left: 0;
-} */
+}
 
 .hero_section_content .hero_content .sub_heading {
   position: relative;
@@ -364,20 +370,15 @@ header {
   .hero_section_content .row {
     flex-direction: column-reverse;
   }
+  .hero_section_wrapper {
+    background-image: url("../images/service-bg-theme.png");
+  }
 }
 
 @media (max-width: 768px) {
   .hero_section_wrapper {
     padding-left: 0;
     padding-right: 0;
-  }
-  .hero_section_content .hero_content .main_heading {
-    font-size: 40px;
-    line-height: 50px;
-  }
-  .hero_section_content .hero_content .sub_heading {
-    font-size: 20px;
-    line-height: 39px;
   }
 }
 
@@ -389,15 +390,12 @@ header {
   .hero_section_content .hero_content {
     padding-top: 0px;
   }
-  .hero_section_wrapper {
-    background-image: url("../images/service-bg-theme.png");
-  }
 }
 
 /* ============== hero section starts ============ */
 
 /* ============== feature section starts ============ */
-.feautured_section {
+.featured_wrapper {
   max-width: var(--default-container-width);
   width: 100%;
   height: 100%;
@@ -407,18 +405,18 @@ header {
   padding: 106.5px 132px;
 }
 
-.feautured_section .row .heading {
+.featured_wrapper .row .heading {
   font-size: 24px;
   font-weight: 700px;
   line-height: 93px;
 }
 
-.feautured_section .row .icon {
+.featured_wrapper .row .icon {
   height: 30px;
   width: 30px;
 }
 
-.feautured_section .left_section {
+.featured_wrapper .left_section {
   transition: 0.3s ease-in-out;
   -webkit-transition: 0.3s ease-in-out;
   -moz-transition: 0.3s ease-in-out;
@@ -427,7 +425,7 @@ header {
 }
 
 @media (max-width: 1440px) {
-  .feautured_section .left_section {
+  .featured_wrapper .left_section {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
@@ -435,34 +433,34 @@ header {
 }
 
 @media (max-width: 992px) {
-  .feautured_section {
+  .featured_wrapper {
     max-width: 72%;
     width: 100%;
     margin-top: 150px;
   }
-  .feautured_section {
+  .featured_wrapper {
     padding-top: 45px;
   }
-  .feautured_section .row .left_section {
+  .featured_wrapper .row .left_section {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
   }
-  .feautured_section .right_section .technologies {
+  .featured_wrapper .right_section .technologies {
     width: 100%;
   }
-  .feautured_section .row .heading {
+  .featured_wrapper .row .heading {
     font-size: 25px;
     text-align: center;
   }
-  .feautured_section .row .technologies {
+  .featured_wrapper .row .technologies {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
-  .feautured_section {
+  .featured_wrapper {
     padding: 0;
   }
 
@@ -486,30 +484,30 @@ header {
   width: var(--full-width);
 }
 
-.about_us_section .square_icon1 {
-  position: absolute;
-  top: 15%;
-  left: 0;
-  z-index: -1;
-}
-
-.about_us_section .square_icon2 {
-  position: absolute;
-  top: 0;
-  left: 0%;
-  bottom: 0;
-  width: 100%;
-  z-index: -1;
-  padding-right: 41.82px;
-}
-
 .about_us_wrapper {
   min-height: 585px;
   height: 100%;
   margin: 64.42px auto 0 auto;
   max-width: var(--inner-container-width);
   width: 100%;
+  position: relative;
 }
+
+/* .about_us_wrapper::before {
+  content: url("../icons/about-us-ring1.svg");
+  position: absolute;
+  top: 5%;
+  left: -20%;
+  z-index: -1;
+}
+
+.about_us_wrapper::after {
+  content: url("../icons/about-us-ring2.svg");
+  position: absolute;
+  top: 20%;
+  right: -20%;
+  z-index: -1;
+} */
 
 .about_us_wrapper .row .left_image,
 .about_us_wrapper .row .right_image {
@@ -621,6 +619,13 @@ header {
   .about_us_wrapper .row .right_image {
     display: none;
   }
+  /* .about_us_wrapper::before {
+    content: "";
+  }
+
+  .about_us_wrapper::after {
+    content: "";
+  } */
 }
 
 @media (max-width: 992px) {
@@ -648,7 +653,7 @@ header {
 .service_section {
   width: var(--full-width);
   position: relative;
-  background-image: url("../images/service-bg-theme.png");
+  background-image: url("../images/service-bg-theme1.png");
   background-size: cover;
   background-position: center;
 }
@@ -664,14 +669,15 @@ header {
   margin-bottom: 14.6px;
 }
 
-.service_content_section .top_content {
+.service_content_section .top_content,
+.service_content_section .top_content h2 .opt {
   position: relative;
 }
-
-.service_content_section .ring_icon1 {
+.service_content_section .top_content h2 .opt::after {
+  content: url("../icons/service-ring-icon.svg");
   position: absolute;
-  top: 0;
-  left: 50%;
+  top: -15%;
+  left: -20%;
   z-index: -1;
 }
 
@@ -759,7 +765,15 @@ header {
 .testimonial_section .content_section .section_main_heading {
   margin-bottom: 55px;
 }
-
+.testimonial_section .content_section .section_main_heading .feed::after {
+  content: url("../icons/testimonial-ring-icon.svg");
+  position: absolute;
+  top: -15%;
+  left: -10%;
+  width: 230.99px;
+  height: 78.99px;
+  z-index: -1;
+}
 .testimonial_section .feedback {
   color: #6f6b80;
 }
@@ -1002,6 +1016,14 @@ header {
   margin: 0 auto;
 }
 
+.faq_section .faq_wrapper .top_section .section_main_heading .freq::after {
+  content: url("../icons/faq-ring-icon.svg");
+  position: absolute;
+  top: -20%;
+  left: -20%;
+  z-index: -1;
+}
+
 .faq_section .bottom_section {
   margin-top: 71.76px;
   width: 100%;
@@ -1148,26 +1170,22 @@ header {
 /* =================== theme icon starts ================ */
 
 .theme_icon_3 {
-  position: relative;
   width: 19.42px;
   height: 19.42px;
   top: 55.82px;
   left: 125.49px;
 }
 .theme_icon_4 {
-  position: relative;
-  top: -327.76px;
-  z-index: -1;
+  position: absolute;
+  top: 319.2px;
   width: 100%;
-  display: flex;
-  justify-content: end;
+  z-index: -1;
 }
 .theme_icon_4 img {
   width: 78.27px;
   height: 74.1px;
 }
 .theme_icon_5 {
-  position: relative;
   width: 45px;
   height: 41px;
   left: 534.64px;
@@ -1175,7 +1193,6 @@ header {
 }
 
 .theme_icon_7 {
-  position: relative;
   top: -50px;
   right: 339.14px;
   z-index: -1;
@@ -1194,12 +1211,14 @@ header {
   .faq-icon-div {
     display: none;
   }
-  .section_main_heading,
-  .about_us_wrapper .content_section .top_content h2 {
-    font-size: 30px;
-  }
   .section_sub_heading,
   .common_description {
     font-size: 14px;
+  }
+}
+@media (max-width: 477px) {
+  .section_main_heading,
+  .about_us_wrapper .content_section .top_content h2 {
+    font-size: 35px;
   }
 }
