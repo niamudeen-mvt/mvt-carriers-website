@@ -155,7 +155,6 @@ header {
   width: var(--full-width);
   background-color: var(--white-color);
   z-index: 999;
-  box-shadow: 5px 0 50px rgba(0, 0, 0, 0.1);
 }
 
 .navbar_section {
@@ -1011,12 +1010,13 @@ header {
   .theme_icon_5 {
     left: 0;
   }
-  .theme_icon_4,
   .faq-icon-div {
     display: none;
   }
   .section_sub_heading,
-  .common_description {
+  .common_description,
+  .faq_section .bottom_section .accordion .accordion-button,
+  .accordion-body {
     font-size: 14px;
   }
 }
