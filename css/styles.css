@@ -348,13 +348,6 @@ header {
     padding-left: 0;
     padding-right: 0;
   }
-}
-
-@media (max-width: 576px) {
-  .hero_section_content .hero_content .sub_heading {
-    font-size: 14px;
-    line-height: 30px;
-  }
   .hero_section_content .hero_content {
     padding-top: 0px;
     display: flex;
@@ -363,24 +356,32 @@ header {
     flex-direction: column;
     text-align: center;
   }
-  .hero_section_content .hero_content .main_heading {
-    font-size: 60px;
-  }
-  .hero_section_content .hero_content .enroll_btn {
-    width: 167.98px;
-    height: 58px;
-    padding: 22px;
-    border: 1px solid var(--black-color);
-    background-color: transparent;
-  }
+}
+
+@media (max-width: 576px) {
   .hero_section_wrapper {
     padding-top: 50px;
+  }
+  .hero_section_content .hero_content .main_heading {
+    font-size: 55px;
   }
   .hero_section_content .hero_content .main_heading .impact::after {
     content: url("../icons/impact-ring.svg");
     position: absolute;
     top: 30%;
     left: -25%;
+  }
+  .hero_section_content .hero_content .sub_heading {
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  .hero_section_content .hero_content .enroll_btn {
+    width: 167.98px;
+    height: 58px;
+    padding: 22px;
+    border: 1px solid var(--black-color);
+    background-color: transparent;
   }
 }
 
@@ -720,6 +721,11 @@ header {
 @media (max-width: 992px) {
   .testimonial_section .content_section {
     max-width: var(--inner-container-width);
+  }
+}
+@media (max-width: 576px) {
+  .testimonial_section .content_section {
+    width: 72%;
   }
 }
 
