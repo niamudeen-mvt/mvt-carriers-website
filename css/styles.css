@@ -4,13 +4,18 @@
   font-family: VelaSans;
   src: url("../fonts/VelaSans/Static/OTF/VelaSans-Regular.otf");
 }
+
 /* ========== default settings ============ */
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   user-select: none;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 
 :root {
@@ -34,6 +39,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  font-family: "Urbanist", sans-serif !important  ;
+}
+
 li {
   list-style: none;
 }
@@ -44,6 +53,12 @@ button {
 .default_mb {
   margin-bottom: 80px;
 }
+
+.display_none {
+  display: none !important;
+}
+
+/* ============= flex classes ============== */
 
 .flex_center {
   display: flex;
@@ -57,18 +72,13 @@ button {
   align-items: center;
 }
 
-.flex_col {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
 .flex_end {
   display: flex;
   justify-content: end;
   align-items: center;
 }
+
+/* =========== heading classes =============== */
 
 .section_main_heading {
   font-weight: 800;
@@ -92,17 +102,18 @@ button {
   color: var(--white-color);
 }
 
+.courses_title {
+  font-weight: 700px;
+  line-height: 28px;
+  color: var(--grey-color);
+}
+
+/* ===== fonts classes =================== */
 .urban_font_500 {
   font-size: 16px;
   font-weight: 500;
   color: var(--black-color);
   text-decoration: none;
-}
-
-.courses {
-  font-weight: 700px;
-  line-height: 28px;
-  color: var(--grey-color);
 }
 
 .vela_font_600 {
@@ -118,25 +129,24 @@ button {
   line-height: 32px;
 }
 
-/* ============ default settings ends */
-/* =========== setting fonts ================= */
+/* ===== border radius classes =================== */
 
-h1,
-h2,
-h4,
-h3,
-p,
-ul li a,
-.courses,
-.urban_font_500,
-.common_description,
-.urban_font_500w_20f,
-.section_main_heading,
-.section_sub_heading {
-  font-family: "Urbanist", sans-serif;
+.border_radius_45 {
+  border-radius: 45px;
+  -webkit-border-radius: 45px;
+  -moz-border-radius: 45px;
+  -ms-border-radius: 45px;
+  -o-border-radius: 45px;
 }
 
-/* ============ setting fonts ends ================= */
+/* ========== transition classes ================ */
+.transition_3s {
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+}
 
 /* ============== navbar section starts ============ */
 
@@ -171,11 +181,6 @@ header {
   color: var(--yellow-color);
 }
 
-.navbar_section .collpased_btn,
-.navbar_section .toggle_section {
-  display: none;
-}
-
 .navbar_section .nav_btn,
 .navbar_section .collpased_btn {
   width: 245px;
@@ -186,16 +191,11 @@ header {
   border: none;
 }
 
-.nav_btn .nav_btn_icon,
-.navbar_section .collpased_btn .nav_btn_icon {
-  margin-right: 10px;
-}
 .nav_btn .nav_btn_text,
 .navbar_section .collpased_btn .nav_btn_text {
   font-weight: 600;
   line-height: 16px;
   color: var(--white-color);
-  font-family: "Urbanist", sans-serif;
 }
 
 .navbar_section .toggle_section .fa-xmark {
@@ -206,17 +206,6 @@ header {
   color: black;
 }
 
-.navbar_section .brand_logo,
-.navbar_section ul li a,
-.featured_wrapper .left_section,
-.navbar_section .collpase_navbar_menu {
-  transition: 0.3s ease-in-out;
-  -webkit-transition: 0.3s ease-in-out;
-  -moz-transition: 0.3s ease-in-out;
-  -ms-transition: 0.3s ease-in-out;
-  -o-transition: 0.3s ease-in-out;
-}
-
 @media (max-width: 1360px) {
   .navbar_section .nav_menu,
   .navbar_section .nav_btn {
@@ -225,7 +214,7 @@ header {
 
   .navbar_section .collpased_btn,
   .navbar_section .toggle_section {
-    display: block;
+    display: block !important;
   }
   .navbar_section .collpase_navbar_menu {
     position: absolute;
@@ -262,12 +251,9 @@ header {
   }
 }
 
-/* ============== navbar section ends ============ */
-
 /* ============== hero section starts ============ */
 
 .hero_section {
-  position: relative;
   width: var(--full-width);
   min-height: 871px;
   height: 100%;
@@ -299,12 +285,6 @@ header {
   line-height: 93px;
 }
 
-.hero_section_content .hero_content .ring_icon1 {
-  position: absolute;
-  top: 0;
-  left: -26.5px;
-}
-
 .hero_section_content .hero_content .main_heading .real::before {
   content: url("../icons/ring-icon1.svg");
   position: absolute;
@@ -313,7 +293,6 @@ header {
 }
 
 .hero_section_content .hero_content .main_heading .impact {
-  position: relative;
   background-image: linear-gradient(
     to right,
     var(--yellow-color),
@@ -331,7 +310,6 @@ header {
 }
 
 .hero_section_content .hero_content .sub_heading {
-  position: relative;
   font-weight: 500px;
   font-size: 20px;
   line-height: 39px;
@@ -411,7 +389,6 @@ header {
 /* ============== feature section starts ============ */
 .featured_wrapper {
   max-width: var(--default-container-width);
-  width: 100%;
   height: 100%;
   margin: 0 auto;
   border-bottom: 1px solid var(--light-grey-border);
@@ -445,7 +422,6 @@ header {
 @media (max-width: 992px) {
   .featured_wrapper {
     max-width: 72%;
-    width: 100%;
     margin-top: 150px;
   }
   .featured_wrapper {
@@ -494,39 +470,22 @@ header {
 /* =========== about us section ================ */
 
 .about_us_section {
-  position: relative;
   width: var(--full-width);
+  background-image: url("../images/about--us-bg-theme.png");
+  background-size: cover;
+  background-position: center;
 }
 
 .about_us_wrapper {
+  max-width: var(--inner-container-width);
   min-height: 585px;
   height: 100%;
   margin: 64.42px auto 0 auto;
-  max-width: var(--inner-container-width);
-  width: 100%;
-  position: relative;
-}
-
-.about_us_wrapper::before {
-  content: url("../icons/about-us-ring1.svg");
-  position: absolute;
-  top: 5%;
-  left: -20%;
-  z-index: -1;
-}
-
-.about_us_wrapper::after {
-  content: url("../icons/about-us-ring2.svg");
-  position: absolute;
-  top: 15%;
-  right: -14%;
-  z-index: -1;
 }
 
 .about_us_wrapper .row .left_image,
 .about_us_wrapper .row .right_image {
   max-width: 350px;
-  width: 100%;
   height: 585px;
 }
 .about_us_wrapper .row img {
@@ -545,11 +504,6 @@ header {
   margin-bottom: 31px !important;
   margin: 0 auto;
   border: 1px solid var(--black-color);
-  border-radius: 45px;
-  -webkit-border-radius: 45px;
-  -moz-border-radius: 45px;
-  -ms-border-radius: 45px;
-  -o-border-radius: 45px;
 }
 .about_us_wrapper .content_section .top_content h2 {
   font-size: 40px;
@@ -568,11 +522,6 @@ header {
   min-height: 277px;
   background-color: var(--purple-color);
   margin-bottom: 31px !important;
-  border-radius: 45px;
-  -webkit-border-radius: 45px;
-  -moz-border-radius: 45px;
-  -ms-border-radius: 45px;
-  -o-border-radius: 45px;
 }
 
 .about_us_wrapper .content_section .left_content ul {
@@ -633,21 +582,9 @@ header {
   .about_us_wrapper .row .right_image {
     display: none;
   }
-  .about_us_wrapper::before {
-    content: "";
-  }
-
-  .about_us_wrapper::after {
-    content: "";
-  }
 }
 
 @media (max-width: 992px) {
-  .about_us_wrapper .row .left_image,
-  .about_us_wrapper .row .right_image {
-    display: none;
-  }
-
   .about_us_wrapper .content_section .top_content {
     width: 100%;
   }
@@ -660,13 +597,10 @@ header {
   }
 }
 
-/* =========== about us section ends here ================ */
-
 /* =========== service section starts here ================ */
 
 .service_section {
   width: var(--full-width);
-  position: relative;
   background-image: url("../images/service-bg-theme1.png");
   background-size: cover;
   background-position: center;
@@ -674,7 +608,6 @@ header {
 
 .service_section_wrapper {
   max-width: 47%;
-  width: 100%;
   margin: 0 auto;
 }
 
@@ -683,10 +616,6 @@ header {
   margin-bottom: 14.6px;
 }
 
-.service_content_section .top_content,
-.service_content_section .top_content h2 .opt {
-  position: relative;
-}
 .service_content_section .top_content h2 .opt::after {
   content: url("../icons/service-ring-icon.svg");
   position: absolute;
@@ -697,20 +626,14 @@ header {
 
 .service_card_section .card {
   max-width: 270px;
-  width: 100%;
   height: 100%;
   padding: 30px;
-  border-radius: 5px;
   border: none;
+  border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
-  transition: 0.5s ease;
-  -webkit-transition: 0.5s ease;
-  -moz-transition: 0.5s ease;
-  -ms-transition: 0.5s ease;
-  -o-transition: 0.5s ease;
 }
 
 .service_card_section .card img {
@@ -757,15 +680,11 @@ header {
   }
 }
 
-/* =========== service section ends ================ */
-
 /* =========== testimonial section starts ================ */
 .testimonial_section {
-  position: relative;
   margin-top: 50px;
   min-height: 768.49px;
   max-width: var(--full-width);
-  width: 100%;
   padding: 0 auto;
   background-image: url("../images/testimonial-bg.png");
   background-position: center;
@@ -804,24 +723,18 @@ header {
 @media (max-width: 992px) {
   .testimonial_section .content_section {
     max-width: var(--inner-container-width);
-    width: 100%;
   }
 }
-
-/* =========== testimonial section ends here ================ */
 
 /* =========== contact section starts ================ */
 
 .contact_section {
   max-width: var(--full-width);
-  width: 100%;
   margin-top: 67.45px;
 }
 
 .contact_content_section {
-  position: relative;
   max-width: 62%;
-  width: 100%;
   margin: 0 auto;
   height: 100%;
   min-height: 350px;
@@ -833,7 +746,6 @@ header {
   -o-border-radius: 75px;
 }
 .contact_content_section .row {
-  position: absolute;
   height: 100%;
 }
 .contact_content_section .image_overlay {
@@ -851,19 +763,11 @@ header {
 }
 
 .contact_content_section .input_section .input_box {
-  position: relative;
   max-width: 479px;
   width: 100%;
   min-height: 80px;
-  background-color: var(--white-color);
-  border: 1px solid #f1f1f1;
+  background-color: transparent;
   box-shadow: 10px 20px 50px 0 rgba(0, 0, 0, 0.1);
-  border-radius: 12px;
-  -webkit-border-radius: 12px;
-  -moz-border-radius: 12px;
-  -ms-border-radius: 12px;
-  -o-border-radius: 12px;
-  -webkit-border-radius: 12px;
 }
 .contact_content_section .input_section .input_box input {
   width: 100%;
@@ -888,7 +792,6 @@ header {
   background-color: var(--yellow-color);
   padding: 20px, 40px, 20px, 40px;
   margin-left: auto;
-  font-family: "Urbanist", sans-serif;
   z-index: 3;
 }
 
@@ -902,7 +805,6 @@ header {
     left: 0;
     border: 1px solid white;
     max-width: 479px;
-    width: 100%;
   }
 }
 
@@ -942,16 +844,13 @@ header {
 /* =========== faq section starts ================ */
 
 .faq_section {
-  position: relative;
   max-width: var(--full-width);
-  width: 100%;
   margin-top: 67.45px;
   height: 100%;
 }
 
 .faq_section .faq_wrapper {
   max-width: 62%;
-  width: 100%;
   margin: 0 auto;
 }
 
@@ -970,7 +869,6 @@ header {
 }
 
 .faq_section .bottom_section .image_overlay {
-  position: absolute;
   top: 100px;
   left: 138.5px;
   height: 100%;
@@ -988,15 +886,14 @@ header {
 }
 .faq_section .bottom_section .accordion .accordion-button {
   background-color: var(--soft-blue-theme);
-  font-family: "Urbanist", sans-serif;
 }
 .faq_section .bottom_section .accordion .accordion-button::after {
-  background-image: url("../icons/accordion-icon.svg");
-  background-position: center;
-  background-size: cover;
   width: 9.27px;
   height: 17.31px;
   color: rgb(168, 164, 164);
+  background-image: url("../icons/accordion-icon.svg");
+  background-position: center;
+  background-size: cover;
 }
 
 .faq-icon-div {
@@ -1014,17 +911,13 @@ header {
 @media (max-width: 768px) {
   .faq_section .faq_wrapper {
     max-width: var(--inner-container-width);
-    width: 100%;
   }
 }
-
-/* =========== faq section ends ================ */
 
 /* =========== footer section starts ================ */
 
 .footer_section {
   max-width: var(--full-width);
-  width: 100%;
   margin-top: 97.01px;
   background-color: var(--dark-purple-color);
   height: 100%;
@@ -1034,7 +927,6 @@ header {
 
 .footer_section .row {
   max-width: var(--inner-container-width);
-  width: 100%;
   margin: 0 auto;
 }
 
@@ -1044,7 +936,6 @@ header {
 
 .footer_section .left_section .logo_section {
   max-width: 207.78px;
-  width: 100%;
   height: 20px;
 }
 
@@ -1088,7 +979,6 @@ header {
     padding-bottom: 20px;
   }
 }
-/* =================== footer section starts ================ */
 
 /* =================== theme icon starts ================ */
 
@@ -1098,16 +988,7 @@ header {
   top: 55.82px;
   left: 125.49px;
 }
-.theme_icon_4 {
-  position: absolute;
-  top: 319.2px;
-  width: 100%;
-  z-index: -1;
-}
-.theme_icon_4 img {
-  width: 78.27px;
-  height: 74.1px;
-}
+
 .theme_icon_5 {
   width: 45px;
   height: 41px;
@@ -1122,7 +1003,6 @@ header {
   height: 113px;
 }
 
-/* =========== theme icons ends */
 @media (max-width: 576px) {
   .footer_section {
     margin-top: 300px;

@@ -20,43 +20,44 @@
 
 <body>
 
-  <header class=" sticky-top custom_border">
+  <header class="sticky-top custom_border">
     <div class="navbar_section flex_SB">
-      <a href="#" class=" brand_logo">
+      <a href="#" class="brand_logo transition_3s">
         <img src="./images/logo.png" alt="brand-logo" class=" img-fluid">
       </a>
-      <nav class="nav_menu">
+      <nav class="nav_menu transition_3s">
         <ul class="flex_SB p-0">
-          <li class="flex_center" id="portfolio"><a href="#" class="urban_font_500">Portfolio</a></li>
-          <li class="flex_center" id="courses"><a href="#" class="urban_font_500">Courses</a></li>
-          <li class="flex_center" id="about"><a href="#" class="urban_font_500">About</a></li>
-          <li class="flex_center" id="application_process"><a href="#" class="urban_font_500">Application Process</a>
+          <li class="flex_center" id="portfolio"><a href="#" class="urban_font_500 transition_3s">Portfolio</a></li>
+          <li class="flex_center" id="courses"><a href="#" class="urban_font_500 transition_3s">Courses</a></li>
+          <li class="flex_center" id="about"><a href="#" class="urban_font_500 transition_3s">About</a></li>
+          <li class="flex_center" id="application_process"><a href="#" class="urban_font_500 transition_3s">Application
+              Process</a>
           </li>
-          <li class="flex_center" id="contact_us"><a href="#" class="urban_font_500">Contact
+          <li class="flex_center" id="contact_us"><a href="#" class="urban_font_500 transition_3s">Contact
               Us</a></li>
-          <button class="collpased_btn">
-            <span class="nav_btn_icon">
+          <button class="collpased_btn display_none">
+            <span class="nav_btn_icon mx-2">
               <img src="./icons/user-icon.svg" alt="user-icon">
             </span>
             <span class=" nav_btn_text">Login / Register Now</span>
           </button>
         </ul>
       </nav>
-      <button class=" nav_btn p-0">
-        <span class="nav_btn_icon">
+      <button class="nav_btn p-0">
+        <span class="nav_btn_icon mx-2">
           <img src="./icons/user-icon.svg" alt="user-icon">
         </span>
         <span class=" nav_btn_text">Login / Register Now</span>
       </button>
 
-      <div class="toggle_section flex_end" onclick="makeNavMenuResponsive()">
+      <div class="toggle_section flex_end display_none" onclick="makeNavMenuResponsive()">
         <i class="fa-solid fa-bars" id="toggle-icon"></i>
       </div>
     </div>
   </header>
 
   <!-- hero section starts -->
-  <section class="hero_section flex_center">
+  <section class="hero_section flex_center position-relative">
     <div class="hero_section_wrapper" data-aos="fade-up" data-aos-delay="50" data-aos-duration="2000">
       <div class="hero_section_content">
         <div class="row">
@@ -65,9 +66,9 @@
             <div class="hero_content">
               <h1 class="main_heading position-relative">
                 <span class="real position-relative">Real</span> Projects, Real Skills, Real <span
-                  class="impact">Impact</span>
+                  class="impact position-relative">Impact</span>
               </h1>
-              <p class="sub_heading px-2">
+              <p class="sub_heading px-2 position-relative">
                 Attain Empowerment through Online Education: Acquire <br /> Knowledge and Skills from Top Instructors
               </p>
               <button class="enroll_btn flex_center">
@@ -93,30 +94,30 @@
     <section class="feautured_section " data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500">
       <div class="featured_wrapper">
         <div class="row flex_center">
-          <div class="col-xxl-4 col-xl-12  col-md-12 col-sm-12 col-12 left_section p-0 ">
+          <div class="col-xxl-4 col-xl-12  col-md-12 col-sm-12 col-12 left_section p-0 transition_3s">
             <h3 class="heading text-left">Featured Technologies</h3>
           </div>
           <div class="col-xxl-8 col-xl-12 col-md-12  col-sm-12 col-12 right_section p-0">
             <div class="technologies flex_SB">
               <div class="courses_container">
                 <img src="./icons/html-icon.svg" class="icon" alt="html-icon">
-                <span class="courses">HTML</span>
+                <span class="courses_title">HTML</span>
               </div>
               <div class="courses_container">
                 <img src="./icons/css-icon.svg" class="icon" alt="css-icon">
-                <span class="courses">CSS</span>
+                <span class="courses_title">CSS</span>
               </div>
               <div class="courses_container">
                 <img src="./icons/javascript-icon.svg" class="icon" alt="javascript-icon">
-                <span class="courses">JAVASCRIPT</span>
+                <span class="courses_title">JAVASCRIPT</span>
               </div>
               <div class="courses_container">
                 <img src="./icons/react-icon.svg" class="icon" alt="react-icon">
-                <span class="courses">REACT</span>
+                <span class="courses_title">REACT</span>
               </div>
               <div class="courses_container">
                 <img src="./icons/angular-icon.svg" alt="angular-icon" height="30px">
-                <span class="courses">ANGULAR</span>
+                <span class="courses_title">ANGULAR</span>
               </div>
             </div>
           </div>
@@ -128,11 +129,11 @@
                 <div class="flex_SB">
                   <div class="w-50 text-center ">
                     <img src="./icons/html-icon.svg" class="icon" alt="html-icon">
-                    <span class="courses">HTML</span>
+                    <span class="courses_title">HTML</span>
                   </div>
                   <div class="w-50 text-center ">
                     <img src="./icons/css-icon.svg" class="icon" alt="css-icon">
-                    <span class="courses">CSS</span>
+                    <span class="courses_title">CSS</span>
                   </div>
 
                 </div>
@@ -141,11 +142,11 @@
                 <div class="flex_SB">
                   <div class="w-50 text-center ">
                     <img src="./icons/javascript-icon.svg" class="icon" alt="javascript-icon">
-                    <span class="courses">JAVASCRIPT</span>
+                    <span class="courses_title">JAVASCRIPT</span>
                   </div>
                   <div class="w-50 text-center ">
                     <img src="./icons/react-icon.svg" class="icon" alt="react-icon">
-                    <span class="courses">REACT</span>
+                    <span class="courses_title">REACT</span>
                   </div>
                 </div>
               </div>
@@ -153,7 +154,7 @@
                 <div class="flex_SB">
                   <div class="w-100 text-center ">
                     <img src="./icons/angular-icon.svg" alt="angular-icon" height="30px">
-                    <span class="courses">ANGULAR</span>
+                    <span class="courses_title">ANGULAR</span>
                   </div>
                 </div>
               </div>
@@ -169,11 +170,9 @@
     </div>
 
 
-    <section class="about_us_section">
-      <div class="theme_icon_4 flex_end" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="50">
-        <img src="./icons/theme-icon4.svg" alt="theme-icon4" class="img-fluid">
-      </div>
-      <div class="about_us_wrapper" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500">
+    <section class="about_us_section position-relative" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500">
+
+      <div class="about_us_wrapper position-relative">
         <div class="row">
           <div class="col-12  col-lg-3 col-sm-12  p-0  flex_center">
             <div class="left_image flex_center" data-aos-offset="300">
@@ -184,7 +183,7 @@
             <div class="content_section pt-2 ">
               <div class="row">
                 <div class="col-lg-12 col-12">
-                  <div class="top_content">
+                  <div class="top_content border_radius_45">
                     <h2>Who are we</h2>
                     <p class="common_description">At My Virtual
                       Teams , we're more
@@ -198,7 +197,7 @@
                   </div>
                 </div>
                 <div class="col-12 col-lg-6 col-xl-6  left_col">
-                  <div class="left_content flex_center">
+                  <div class="left_content flex_center border_radius_45">
                     <ul class=" p-0">
                       <li>
                         <img src="./images/check-icon.png" alt="check-icon">
@@ -220,7 +219,7 @@
                   </div>
                 </div>
                 <div class="col-12 col-lg-6 col-xl-6 right_col flex_end">
-                  <div class="right_content">
+                  <div class="right_content border_radius_45">
                     <h2>We offer
                       the best career</h2>
                     <button>
@@ -245,21 +244,21 @@
     </div>
 
 
-    <section class="service_section" data-aos="fade-up" data-aos-delay="50" data-aos-offset="300"
+    <section class="service_section position-relative" data-aos="fade-up" data-aos-delay="50" data-aos-offset="300"
       data-aos-duration="1500">
       <div class="service_section_wrapper">
         <div class="service_content_section text-center">
-          <div class="top_content">
+          <div class="top_content position-relative">
             <p class="section_sub_heading">WHY CHOOSE US </p>
             <h2 class="section_main_heading">Factors to
-              <span class="opt">opt us</span>
+              <span class="opt position-relative">opt us</span>
             </h2>
           </div>
         </div>
         <div class="service_card_section">
           <div class="row">
             <div class="col-xxl-4 col-xl-6  col-md-6  col-sm-12 col-lg-6 col-12 flex_center  mb-5 ">
-              <div class="card shadow-sm" data-aos="zoom-in-up">
+              <div class="card transition_3s shadow-sm" data-aos="zoom-in-up">
                 <img src="./icons/service-icon1.svg" alt="card-icon">
                 <p class="card_heading">Experiential Learning</p>
                 <p class="common_description">We understand that knowledge truly comes alive when applied. That's why we
@@ -269,7 +268,7 @@
               </div>
             </div>
             <div class="col-xxl-4 col-xl-6  col-lg-6 col-md-6  col-sm-12 col-12 flex_center  mb-5 ">
-              <div class="card  -sm" data-aos="zoom-in-up">
+              <div class="card transition_3s  shadow-sm" data-aos="zoom-in-up">
                 <img src="./icons/service-icon2.svg" alt="card-icon">
                 <p class="card_heading">Expert Instructors</p>
                 <p class="common_description">Our instructors are industry professionals with a wealth of experience and
@@ -279,7 +278,7 @@
               </div>
             </div>
             <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6  col-sm-12 col-12 flex_center  mb-5 ">
-              <div class="card shadow-sm" data-aos="zoom-in-up">
+              <div class="card transition_3s shadow-sm" data-aos="zoom-in-up">
                 <img src="./icons/service-icon3.svg" alt="card-icon">
                 <p class="card_heading">Hands-On Projects </p>
                 <p class="common_description">Get your hands dirty with projects that mirror real industry challenges.
@@ -289,7 +288,7 @@
               </div>
             </div>
             <div class="offset-xxl-2 col-xxl-4 col-xl-6  col-lg-6 col-md-6  col-sm-12 col-12  flex_center  mb-5">
-              <div class="card shadow-sm" data-aos="zoom-in-up">
+              <div class="card transition_3s shadow-sm" data-aos="zoom-in-up">
                 <img src="./icons/service-icon4.svg" alt="card-icon">
                 <p class="card_heading">Flexible Learning</p>
                 <p class="common_description">Our instructors are industry professionals with a wealth of experience and
@@ -299,7 +298,7 @@
               </div>
             </div>
             <div class="col-xxl-4 col-xl-6  col-lg-6 col-md-6  col-sm-12 col-12  flex_center  mb-5">
-              <div class="card shadow-sm" data-aos="zoom-in-up">
+              <div class="card transition_3s shadow-sm" data-aos="zoom-in-up">
                 <img src="./icons/service-icon5.svg" alt="card-icon">
                 <p class="card_heading">Thriving Community</p>
                 <p class="common_description">Join a vibrant community of like-minded individuals who share your passion
@@ -313,7 +312,7 @@
       </div>
     </section>
 
-    <section class="testimonial_section flex_center ">
+    <section class="testimonial_section flex_center position-relative">
       <div class="text-center content_section" data-aos="fade-up" data-aos-delay="50" data-aos-duration="2000">
         <p class="section_heading section_sub_heading">TESTIMONIAL</p>
         <h2 class="section_main_heading" data-aos="fade-up">Our Students <span
@@ -337,20 +336,20 @@
 
 
     <section class="contact_section">
-      <section class="contact_content_section flex_center" data-aos="fade-up" data-aos-delay="50" data-aos-offset="200"
-        data-aos-duration="2000">
+      <section class="contact_content_section flex_center position-relative" data-aos="fade-up" data-aos-delay="50"
+        data-aos-offset="200" data-aos-duration="2000">
         <div class=" image_overlay flex_end position-absolute">
           <img src="./images/contact-section-bg.png" alt="default-img" class=" img-fluid">
         </div>
-        <div class="row">
-          <div class=" col-12  col-sm-12 col-md-12  col-lg-6 left_section flex_center ">
+        <div class="row position-absolute">
+          <div class=" col-12  col-sm-12 col-md-12  col-lg-6 left_section flex_center">
             <div class="">
               <p class=" text-left section_sub_heading">LET US HELP</p>
               <h2 class=" section_main_heading">Let us guide you through your career</h2>
             </div>
           </div>
           <div class=" col-12 col-sm-12 col-md-12 col-lg-6 input_section flex_SB position-relative">
-            <div class="input_box flex_SB">
+            <div class="input_box flex_SB position-relative">
               <input type="text" placeholder="Enter your email address" class="position-absolute ">
               <button class="">Contact Now</button>
             </div>
@@ -363,7 +362,7 @@
       <img src="./icons/theme-icon9.svg" alt="theme-icon" class="img-fluid">
     </div>
 
-    <section class="faq_section flex_col" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500">
+    <section class="faq_section position-relative" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500">
       <div class="faq_wrapper">
         <div class="top_section  text-center ">
           <p class="section_sub_heading">FAQ</p>
@@ -372,7 +371,7 @@
           </h2>
         </div>
         <div class="bottom_section">
-          <div class="image_overlay">
+          <div class="image_overlay position-absolute">
             <img src="./icons/theme-icon10.svg" alt="icon" class="img-fluid">
           </div>
           <div class="accordion " id="accordionExample">
