@@ -264,7 +264,7 @@ header {
 
 .hero_section_wrapper {
   width: var(--full-width);
-  padding-top: 157.01px;
+  padding: 100px 0;
 }
 
 .hero_section_content {
@@ -389,11 +389,11 @@ header {
 /* ============== feature section starts ============ */
 .featured_wrapper {
   max-width: var(--default-container-width);
+  min-height: 230px;
   height: 100%;
   margin: 0 auto;
-  border-bottom: 1px solid var(--light-grey-border);
-  gap: 193px;
   padding: 106.5px 132px;
+  border-bottom: 1px solid var(--light-grey-border);
 }
 
 .featured_wrapper .row .heading {
@@ -423,18 +423,7 @@ header {
   .featured_wrapper {
     max-width: 72%;
     margin-top: 150px;
-  }
-  .featured_wrapper {
-    padding-top: 45px;
-  }
-  .featured_wrapper .row .left_section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  .featured_wrapper .right_section .technologies {
-    width: 100%;
+    padding: 0;
   }
   .featured_wrapper .row .heading {
     font-size: 25px;
@@ -443,8 +432,15 @@ header {
   .featured_wrapper .row .technologies {
     display: none;
   }
-  .featured_wrapper {
-    padding: 0;
+
+  .featured_wrapper .row .left_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .featured_wrapper .right_section .technologies {
+    width: 100%;
   }
 
   .courses_container {
@@ -456,6 +452,7 @@ header {
     -ms-transform: translateX(30%);
     -o-transform: translateX(30%);
   }
+
   .featured_wrapper #carouselExampleAutoplaying {
     display: block;
   }
@@ -555,10 +552,10 @@ header {
   width: 123.98px;
   height: 14px;
   gap: 10px;
-  background-color: transparent;
   border: none;
   display: flex;
   justify-content: center;
+  background-color: transparent;
 }
 
 .about_us_wrapper .content_section .right_content button p {
@@ -957,15 +954,13 @@ header {
   height: 164.38px;
   padding: 0;
 }
-.footer_section .quick_links_section ul li {
+.footer_section .quick_links_section ul li,
+.footer_section .contact_info_section ul li a {
   margin-bottom: 27px;
 }
 .footer_section .quick_links_section .icon,
 .footer_section .contact_info_section ul li .icon {
   margin-right: 10px;
-}
-.footer_section .contact_info_section ul li a {
-  margin-bottom: 27px;
 }
 
 @media (max-width: 1360px) {
