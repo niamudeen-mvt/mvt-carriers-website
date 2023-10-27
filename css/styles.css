@@ -112,7 +112,7 @@ button {
 .urban_font_500 {
   font-size: 16px;
   font-weight: 500;
-  color: var(--black-color);
+  color: var(--black-color) !important;
   text-decoration: none;
 }
 
@@ -149,7 +149,6 @@ button {
 }
 
 /* ============== navbar section starts ============ */
-
 header {
   position: fixed;
   width: var(--full-width);
@@ -249,6 +248,51 @@ header {
     top: 70px;
   }
 }
+
+/* .container {
+  max-width: var(--default-container-width) !important;
+  min-height: 110px !important;
+}
+
+.navbar .navbar-collapse {
+  z-index: 999;
+}
+
+.navbar .navbar-nav {
+  width: 572px;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover {
+  color: var(--yellow-color) !important;
+}
+
+.navbar_section .collpased_btn,
+.navbar .nav_btn {
+  width: 245px;
+  height: 60px;
+  padding: 22px 20px 22px 16px;
+  background-image: linear-gradient(var(--yellow-color), var(--orange-color));
+  border: none;
+}
+
+.nav_btn .nav_btn_text,
+.navbar_section .collpased_btn .nav_btn_text {
+  font-weight: 600;
+  line-height: 16px;
+  color: var(--white-color);
+}
+
+@media (max-width: 1360px) {
+  .navbar_section .nav_menu,
+  .navbar_section .nav_btn {
+    display: none;
+  }
+
+  .navbar_section .collpased_btn,
+  .navbar_section .toggle_section {
+    display: block !important;
+  }
+} */
 
 /* ============== hero section starts ============ */
 
