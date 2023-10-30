@@ -54,10 +54,6 @@ button {
   margin-bottom: 80px;
 }
 
-.display_none {
-  display: none !important;
-}
-
 /* ============= flex classes ============== */
 
 .flex_center {
@@ -167,15 +163,12 @@ header {
   height: 50px;
 }
 
-.navbar_section nav {
-  width: 572px;
-  height: 11px;
-}
 .navbar_section nav ul {
-  height: inherit;
+  gap: 50px;
 }
 
-.navbar_section ul li a:hover {
+.navbar_section ul li a:hover,
+.navbar_section ul li a.active {
   color: var(--yellow-color);
 }
 
@@ -183,10 +176,9 @@ header {
 .navbar_section .collpased_btn {
   width: 245px;
   height: 60px;
-  gap: 140px;
   padding: 22px 20px 22px 16px;
-  background-image: linear-gradient(var(--yellow-color), var(--orange-color));
   border: none;
+  background-image: linear-gradient(var(--yellow-color), var(--orange-color));
 }
 
 .nav_btn .nav_btn_text,
@@ -196,12 +188,8 @@ header {
   color: var(--white-color);
 }
 
-.navbar_section .toggle_section .fa-xmark {
-  border: none;
-}
 .navbar_section .toggle_section i {
   font-size: 30px;
-  color: black;
 }
 
 @media (max-width: 1360px) {
@@ -249,57 +237,11 @@ header {
   }
 }
 
-/* .container {
-  max-width: var(--default-container-width) !important;
-  min-height: 110px !important;
-}
-
-.navbar .navbar-collapse {
-  z-index: 999;
-}
-
-.navbar .navbar-nav {
-  width: 572px;
-}
-
-.navbar .navbar-nav .nav-item .nav-link:hover {
-  color: var(--yellow-color) !important;
-}
-
-.navbar_section .collpased_btn,
-.navbar .nav_btn {
-  width: 245px;
-  height: 60px;
-  padding: 22px 20px 22px 16px;
-  background-image: linear-gradient(var(--yellow-color), var(--orange-color));
-  border: none;
-}
-
-.nav_btn .nav_btn_text,
-.navbar_section .collpased_btn .nav_btn_text {
-  font-weight: 600;
-  line-height: 16px;
-  color: var(--white-color);
-}
-
-@media (max-width: 1360px) {
-  .navbar_section .nav_menu,
-  .navbar_section .nav_btn {
-    display: none;
-  }
-
-  .navbar_section .collpased_btn,
-  .navbar_section .toggle_section {
-    display: block !important;
-  }
-} */
-
 /* ============== hero section starts ============ */
 
 .hero_section {
   width: var(--full-width);
   min-height: 871px;
-  height: 100%;
   background-image: url("../images/hero_section-bg.png");
   background-size: cover;
   background-position: center;
@@ -316,8 +258,6 @@ header {
 }
 
 .hero_section_content .hero_content {
-  width: 100%;
-  min-height: 399px;
   padding-top: 74.29px;
 }
 
