@@ -237,9 +237,6 @@ header {
 
 .hero_section_wrapper {
   padding: 100px 0;
-  background-image: url("../images/hero_section-bg.png");
-  background-size: cover;
-  background-position: center;
 }
 
 .hero_section_content {
@@ -426,9 +423,7 @@ header {
 
 .about_us_section {
   width: var(--full-width);
-  background-image: url("../images/about--us-bg-theme.png");
-  background-size: cover;
-  background-position: center;
+  margin-bottom: 106.1px;
 }
 
 .about_us_wrapper {
@@ -529,9 +524,6 @@ header {
 
 .service_section {
   width: var(--full-width);
-  background-image: url("../images/service-bg-theme1.png");
-  background-size: cover;
-  background-position: center;
 }
 
 .service_section_wrapper {
@@ -610,9 +602,6 @@ header {
   min-height: 768.49px;
   max-width: var(--full-width);
   padding: 0 auto;
-  background-image: url("../images/testimonial-bg.png");
-  background-position: center;
-  background-size: cover;
 }
 
 .testimonial_section .content_section {
@@ -885,13 +874,6 @@ header {
 
 /* =================== theme icon starts ================ */
 
-.theme_icon_5 {
-  width: 45px;
-  height: 41px;
-  left: 534.64px;
-  z-index: -1;
-}
-
 .theme_icon_7 {
   top: -50px;
   right: 339.14px;
@@ -902,9 +884,6 @@ header {
 @media (max-width: 576px) {
   .footer_section {
     margin-top: 300px;
-  }
-  .theme_icon_5 {
-    left: 0;
   }
   .faq-icon-div {
     display: none;
