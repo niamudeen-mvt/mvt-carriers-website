@@ -42,6 +42,9 @@ html {
 body {
   font-family: "Urbanist", sans-serif !important  ;
 }
+ul {
+  padding: 0 !important;
+}
 
 li {
   list-style: none;
@@ -169,7 +172,7 @@ header {
 
 .navbar_section ul li a:hover,
 .navbar_section ul li a.active {
-  color: var(--yellow-color);
+  color: var(--yellow-color) !important;
 }
 
 .navbar_section .nav_btn,
@@ -242,14 +245,13 @@ header {
 .hero_section {
   width: var(--full-width);
   min-height: 871px;
-  background-image: url("../images/hero_section-bg.png");
-  background-size: cover;
-  background-position: center;
 }
 
 .hero_section_wrapper {
-  width: var(--full-width);
   padding: 100px 0;
+  background-image: url("../images/hero_section-bg.png");
+  background-size: cover;
+  background-position: center;
 }
 
 .hero_section_content {
@@ -505,9 +507,6 @@ header {
   margin-bottom: 31px !important;
 }
 
-.about_us_wrapper .content_section .left_content ul {
-  min-height: 190px;
-}
 .about_us_wrapper .content_section .left_content ul li {
   font-size: 14px;
   margin-bottom: 25px;
@@ -593,8 +592,7 @@ header {
 }
 
 .service_content_section {
-  min-height: 138.08px;
-  margin-bottom: 14.6px;
+  margin-bottom: 64.67px;
 }
 
 .service_content_section .top_content h2 .opt::after {
@@ -832,7 +830,6 @@ header {
 .faq_section {
   max-width: var(--full-width);
   margin-top: 67.45px;
-  height: 100%;
 }
 
 .faq_section .faq_wrapper {
@@ -850,8 +847,6 @@ header {
 
 .faq_section .bottom_section {
   margin-top: 71.76px;
-  width: 100%;
-  height: 390.82px;
 }
 
 .faq_section .bottom_section .image_overlay {
@@ -905,10 +900,9 @@ header {
 .footer_section {
   max-width: var(--full-width);
   margin-top: 97.01px;
-  background-color: var(--dark-purple-color);
-  height: 100%;
   padding-top: 96px;
   padding-bottom: 22.76px;
+  background-color: var(--dark-purple-color);
 }
 
 .footer_section .row {
@@ -925,24 +919,15 @@ header {
   height: 20px;
 }
 
-.footer_section .offset-2 {
-  padding-left: 65px;
-}
-
 .footer_section .quick_links_section h4,
 .footer_section .contact_info_section h4 {
-  padding: 0px, 0px, 15px, 0px;
   font-size: 24px;
   font-weight: 700;
   line-height: 36px;
-  color: var(--white-color);
   margin-bottom: 20px;
+  color: var(--white-color);
 }
-.footer_section .quick_links_section ul {
-  width: 100%;
-  height: 164.38px;
-  padding: 0;
-}
+
 .footer_section .quick_links_section ul li,
 .footer_section .contact_info_section ul li a {
   margin-bottom: 27px;
@@ -965,13 +950,6 @@ header {
 }
 
 /* =================== theme icon starts ================ */
-
-.theme_icon_3 {
-  width: 19.42px;
-  height: 19.42px;
-  top: 55.82px;
-  left: 125.49px;
-}
 
 .theme_icon_5 {
   width: 45px;
