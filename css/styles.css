@@ -147,7 +147,6 @@ header {
 
 .navbar_section {
   max-width: var(--default-container-width);
-  margin: 0 auto;
   min-height: 110px;
 }
 
@@ -245,7 +244,6 @@ header {
 }
 
 .hero_section_content {
-  margin: 0 auto;
   width: var(--inner-container-width);
 }
 
@@ -358,7 +356,6 @@ header {
 .featured_wrapper {
   max-width: var(--default-container-width);
   min-height: 230px;
-  margin: 0 auto;
   margin-bottom: 64.42px;
   padding: 106.5px 132px;
   border-bottom: 1px solid var(--light-grey-border);
@@ -438,7 +435,6 @@ header {
 .about_us_wrapper {
   max-width: var(--inner-container-width);
   min-height: 585px;
-  margin: 0 auto;
 }
 .about_us_section .about_us_wrapper .middle_section {
   padding: 0 36px;
@@ -541,7 +537,6 @@ header {
 
 .service_section_wrapper {
   max-width: 47%;
-  margin: 0 auto;
 }
 
 .service_content_section {
@@ -625,7 +620,6 @@ header {
 
 .testimonial_section .content_section {
   width: 47%;
-  margin: 0 auto;
   min-height: 373px;
 }
 
@@ -673,7 +667,6 @@ header {
 .contact_content_section {
   max-width: 62%;
   min-height: 350px;
-  margin: 0 auto;
   background-color: var(--soft-blue-theme);
   border-radius: 75px;
   -webkit-border-radius: 75px;
@@ -782,7 +775,6 @@ header {
 
 .faq_section .faq_wrapper {
   max-width: 62%;
-  margin: 0 auto;
 }
 
 .faq_section .faq_wrapper .top_section .section_main_heading .freq::after {
@@ -855,7 +847,6 @@ header {
 
 .footer_section .row {
   max-width: var(--inner-container-width);
-  margin: 0 auto;
 }
 
 .footer_section .left_section .info {
