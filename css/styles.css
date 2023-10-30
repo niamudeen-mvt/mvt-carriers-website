@@ -169,7 +169,6 @@ header {
   width: 245px;
   height: 60px;
   padding: 22px 20px 22px 16px;
-  border: none;
   background-image: linear-gradient(var(--yellow-color), var(--orange-color));
 }
 
@@ -552,10 +551,8 @@ header {
 }
 
 .service_card_section .card {
-  max-width: 270px;
-  height: 100%;
+  cursor: pointer;
   padding: 30px;
-  border: none;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -698,7 +695,6 @@ header {
 }
 .contact_content_section .input_section .input_box input {
   font-size: 14px;
-  border: none;
   color: #959595;
   padding-left: 20px;
   border-radius: 12px;
@@ -796,7 +792,6 @@ header {
 }
 
 .faq_section .bottom_section .accordion .accordion-item {
-  border: none;
   margin-bottom: 15px;
 }
 .faq_section .bottom_section .accordion .accordion-item h2 {
